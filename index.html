@@ -1,0 +1,10 @@
+{% extends "src/layouts/layout.njk" %}
+{% include "src/components/hello.njk"  %}
+
+{% block body %}
+    {% if username %}
+        Username: {{ username }}
+    {% else %}
+        Variable <code>username</code> is missing
+    {% endif %}
+{% endblock %}
